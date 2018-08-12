@@ -1,7 +1,6 @@
 package tfa
 
 import (
-	"errors"
 	"log"
 	"testing"
 )
@@ -19,19 +18,6 @@ func get2FaQR(email, issuer string) (string, string, error) {
 	}
 
 	return qrBase64, otp.Secret, nil
-}
-
-func get2FaValid(email, issuer, token string) error {
-
-	otp := TFA{Account: email, Issuer: issuer}
-	v, erro := otp.Validate(token)
-	if erro != nil {
-		return erro
-	}
-	if !v {
-		return errors.New("error validate")
-	}
-	return nil
 }
 
 func checkError(t *testing.T, err error) {
