@@ -1,0 +1,6 @@
+# github.com/dgryski/dgoogauth v0.0.0-20171123172744-fd153d5969d3
+github.com/dgryski/dgoogauth
+# github.com/skip2/go-qrcode v0.0.0-20171229120447-cf5f9fa2f0d8
+github.com/skip2/go-qrcode
+github.com/skip2/go-qrcode/bitset
+github.com/skip2/go-qrcode/reedsolomon
